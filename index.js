@@ -22,7 +22,7 @@ app.post('/api/comminted', (req, res) => {
 });
 
 app.get('/api/test', (req, res) => {
-  res.send('Nhat dep trai').status(200);
+  res.send('Test zing vn').status(200);
 });
 
 app.listen(8000, (err) => {
