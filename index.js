@@ -1,13 +1,16 @@
 const express = require('express');
 const cmd = require('node-cmd');
 const app = express();
+const bodyParser = require('body-parser');
 
+app.use(bodyParser.json());
 
-app.post('/comminted', (req, res) => {
-  res.send(req.body).status(201);
+app.post('/api/comminted', (req, res) => {
+  console.log(req.body);
+  // res.send(req.body).status(201);
 });
 
-app.get('/test', (req, res) => {
+app.get('/api/test', (req, res) => {
   res.send('Connected to Nodejs').status(200);
 });
 
