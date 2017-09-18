@@ -4,7 +4,7 @@ const app = express();
 
 
 app.post('/comminted', (req, res) => {
-  console.log(req.body);
+  res.send(req.body).status(201);
 });
 
 app.get('/test', (req, res) => {
