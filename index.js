@@ -7,7 +7,8 @@ app.use(bodyParser.json());
 
 app.post('/api/comminted', (req, res) => {
   console.log(req.body);
-  console.log('ererer');
+  console.log('ok');
+  res.send('OK').status(201);
   // res.send(req.body).status(201);
 });
 
