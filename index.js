@@ -9,14 +9,13 @@ app.post('/api/comminted', (req, res) => {
   cmd.get(
     'git pull',
     function(err, data, stderr){
-        if (!err) {
-           console.log('the node-cmd cloned dir contains these files :\n\n',data)
-        } else {
-           console.log('error', err)
-        }
-
+      if (!err) {
+          console.log('the node-cmd cloned dir contains these files :\n\n',data)
+      } else {
+          console.log('error', err)
+      }
     }
-);
+  );
 
   res.send('OK').status(201);
   // res.send(req.body).status(201);

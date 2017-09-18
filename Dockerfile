@@ -3,4 +3,4 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY . /app
 EXPOSE 8000
-CMD ["node", "index.js"]
+CMD ["./node_modules/.bin/nodemon", "index.js"]
