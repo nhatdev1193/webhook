@@ -23,7 +23,7 @@ app.post('/api/comminted', (req, res) => {
 });
 
 app.get('/api/test', (req, res) => {
-  res.send('Connected to Nodejs').status(200);
+  res.send('Connected to Nodejs lan thu n').status(200);
 });
 
 app.listen(8000, (err) => {
